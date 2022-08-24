@@ -1,0 +1,6 @@
+---
+# tasks file for Project specific tasks 1
+- name: Sample Project Tasks 1
+  ansible.builtin.copy:
+    src: project_file.txt
+    dest: /home/ubuntu/project_file.txt
