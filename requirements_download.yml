@@ -1,0 +1,12 @@
+
+collections:
+# With the collection name, version, and source options
+- name: sansoft.common_tasks
+  type: git
+  source: 'https://github.com/sandarenu/ansible_common_tasks_collection.git#/sansoft/common_tasks'
+- name: sansoft.project_1_tasks
+  type: dir
+  source: './ansible_collections/sansoft/project_1_tasks'
+- name: sansoft.project_1_plabooks
+  type: dir
+  source: './playbooks'

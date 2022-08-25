@@ -1,0 +1,6 @@
+- name: Run project task defined in sansoft.project_1_tasks collection
+  hosts: app_servers
+  collections: 
+    - sansoft.project_1_tasks
+  roles:
+    - project_1_tasks_1
