@@ -1,4 +1,7 @@
 
+# This requirements file is used package the ansible collections so they can be copied to
+# production servers
+#
 collections:
 # With the collection name, version, and source options
 - name: sansoft.common_tasks
@@ -7,6 +10,3 @@ collections:
 - name: sansoft.project_1_tasks
   type: dir
   source: './ansible_collections/sansoft/project_1_tasks'
-- name: sansoft.project_1_plabooks
-  type: dir
-  source: './playbooks'
