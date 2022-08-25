@@ -1,0 +1,6 @@
+- name: Run common task defined in sansoft.common_tasks collection
+  hosts: app_servers
+  collections: 
+    - sansoft.common_tasks
+  roles:
+    - common_task_1
