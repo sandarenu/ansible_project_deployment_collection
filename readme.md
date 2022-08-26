@@ -38,6 +38,27 @@ requirements.yml                # requirements file used to setup up dependent c
 * Run `ansible-galaxy install -r requirements.yml` to download the reuseable collections from their GIT repositories.
 * Those will be downloaded and installed at `/var/tmp`. This location can be controlled by `collections_path=/var/tmp:./` parameter in `ansible.cfg` file.
 
+## Set up an Ubuntu container for testing
+
+ * Lets create ubuntu container to test our ansible code. Run following to create the image.
+  
+```
+cd ext/test_env
+docker build -t ubuntu-ssh -f ubuntu-with-ssh-Dockerfile .
+```
+
+* Start the container with following.
+
+```
+docker run -d --rm -p 2222:22 ubuntu-ssh
+```
+
+* SSH to the ubuntu container. Use `test` as the password.
+
+```
+ssh test@172.17.0.1 -p 2222 
+```
+
 ## Running Tasks in DEV environment
 
 * Run tasks available in common_tasks collection
