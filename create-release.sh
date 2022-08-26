@@ -26,6 +26,11 @@ cat << EOF >> collections/readme.md
 * Git tag: ${GIT_TAG_NAME}
 * Git last commit: $( git rev-parse HEAD)
 * Release package created by: $(git config --get user.name) <$(git config --get user.email)>
+
+### How to run play books
+
+* Go to ${INSTALL_LOCATION_BASE_PATH}/<RELEASE_VERSION>/plabooks
+* Run ansible-playbook -i production.ini <PLAYBOOK_YML_PATH>
 EOF
 
 
