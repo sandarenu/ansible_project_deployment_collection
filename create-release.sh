@@ -20,10 +20,10 @@ chmod +x collections/install_collection.sh
 
 # Create simple release note
 cat << EOF >> collections/readme.md
-## Ansible Collection Release : ${tagName}
+## Ansible Collection Release : ${GIT_TAG_NAME}
 
 * Release packaged on: $(date)
-* Git tag: ${tagName}
+* Git tag: ${GIT_TAG_NAME}
 * Git last commit: $( git rev-parse HEAD)
 * Release package created by: $(git config --get user.name) <$(git config --get user.email)>
 EOF
